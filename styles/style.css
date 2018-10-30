@@ -258,8 +258,6 @@ h3 {
   float: right;
   padding: 0 calc(20% / 2) 0 0;
 }
-.tipsText:nth-child(2){
-}
 
 .tipsText p{
   margin: 30px 0;
@@ -277,10 +275,8 @@ h3 {
 }
 
 .tipsImage img {
-  width:100%; 
   height:100%;
   object-fit: cover;
-  overflow: hidden; 
 }
 
 /* MEET THE COOK STYLES */
@@ -507,9 +503,13 @@ input{
 
   .footerThird li {
     display: inline-block;
-    padding: 0 10px;
+    /* padding: 0 10px; */
   }
 
+  .footerThird a {
+    padding: 0 10px;
+  }
+  
   .footerThird:last-child {
     display: none;
   }
@@ -529,6 +529,16 @@ input{
   .meetContent .button{
     width: 50%;
   }
+
+  .footerPages a {
+    border-left: 2px solid var(--whiteShade);
+  }
+
+  .footerPages li:first-child a {
+    border-left: none;
+  }
+
+
 
 }
 
@@ -567,9 +577,7 @@ input{
 
     .meetContent .button{
       width: 80%;
-    }
-
-    
+    }  
 }
 
 
