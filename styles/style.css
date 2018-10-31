@@ -581,6 +581,14 @@ input{
   }  
 }
 
+@media(max-width: 337px) {
+  .footerThird a {
+    padding: 0 7px;
+  }
+}
+
+
+
 
 
 
