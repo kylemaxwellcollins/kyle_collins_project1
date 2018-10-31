@@ -38,13 +38,6 @@ body {
   font-family: "Cabin", sans-serif;
 }
 
-header{
-  background-image: url(../images/image-1.jpg);
-  background-position: center;
-  background-size: cover;
-  height: 100vh;
-  background-repeat: no-repeat;
-}
 .wrapper {
   width: 80%;
   max-width: 1600px;
@@ -52,9 +45,13 @@ header{
 }
 
 /* HEADER STYLES */
-header {
-  height: 100vh;
-}
+  header{
+    background-image: url(../images/image-1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    background-repeat: no-repeat;
+  }
 
 .logo {
   float: left;
@@ -96,7 +93,7 @@ header {
 .headerCenter{
   position: relative;
   top: 50%;
-  transform: translateY(calc(-50% - 71px))
+  transform: translateY(calc(-50% - 71px));
 }
 
 .heroText {
@@ -105,7 +102,7 @@ header {
  
 }
 
-h1{
+h1 {
   text-transform: uppercase;
   line-height: 1;
 }
@@ -115,10 +112,10 @@ h1{
   font-family: 'Great Vibes', cursive;
   font-size: 155px;
   text-transform: capitalize;
-
 }
 
   /* SOCIAL MEDIA ICONS */
+
 .social {
   float: right;
   position: relative;
@@ -193,7 +190,6 @@ h2 {
   text-decoration: none;
 }
 
-
 figure {
   display: inline-block;
   padding: 0 60px;
@@ -237,7 +233,6 @@ figure i {
   margin: 0 auto;
 }
 
-
 h3 {
   font-size: 32px;
   text-transform: uppercase;
@@ -275,6 +270,7 @@ h3 {
 }
 
 .tipsImage img {
+  width:100%; 
   height:100%;
   object-fit: cover;
 }
@@ -303,7 +299,6 @@ footer {
 .footerTop {
   text-align: left;
 }
-
 
 footer h3, 
 footer li a,
@@ -409,10 +404,8 @@ input{
   .galleryContent {
     max-width: 100%;
     padding: 0;
-  
   }
 }
-
 
 @media(max-width: 940px){
   .textContent {
@@ -440,6 +433,10 @@ input{
     margin: 0 auto;
   }
 
+  .aboutContent {
+    width: 90%;
+  }
+
   .meetContent .meetImage{
     text-align: center;
     margin-bottom: 30px;
@@ -452,7 +449,6 @@ input{
   .meetContent h2 {
     text-align: center;
   }
-
 
   .footerForm {
     float: none;
@@ -503,27 +499,31 @@ input{
 
   .footerThird li {
     display: inline-block;
-    /* padding: 0 10px; */
   }
 
   .footerThird a {
     padding: 0 10px;
   }
   
-  .footerThird:last-child {
+  .footerThird:last-child, .item3 {
     display: none;
   }
 
-  .item3 {
-    display: none;
-  }
-   
   .galleryItem {
     width: 50%;
+  }
+  
+  .galleryItem img {
+    object-fit: cover;
+    width: 100%;
   }
 
   .galleryItem:nth-child(2) {
     margin: 0;
+  }
+
+  .meetImage {
+    width: 260px;
   }
 
   .meetContent .button{
@@ -537,47 +537,48 @@ input{
   .footerPages li:first-child a {
     border-left: none;
   }
-
-
-
 }
 
-  @media(max-width: 480px) {
-    .meetContent .button{
-      width: 70%;
-    }
+@media(max-width: 480px) {
+  .meetContent .button{
+    width: 70%;
+  }
 
-    .heroText h1 {
-      font-size: 22px;
-    }
+  .heroText h1 {
+    font-size: 22px;
+  }
 
-    .heroText .hero {
-      font-size: 120px;
-    }
+  .heroText .hero {
+    font-size: 120px;
+  }
 
-    .footerForm .button, input {
-      width: 100%;
-      text-align: center;
-      margin: 5px 0;
-    }
+  .tipsText p {
+    padding: 0 5%;
+  }
 
-    .logo {
-      font-size: 40px;
-    }
+  .footerForm .button, input {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
 }
 
 @media(max-width: 430px) {
-    .heroText h1 {
-      font-size: 18px;
-    }
+  .heroText h1 {
+    font-size: 18px;
+  }
 
-    .heroText .hero {
-      font-size: 100px;
-    }
+  .heroText .hero {
+    font-size: 100px;
+  }
 
-    .meetContent .button{
-      width: 80%;
-    }  
+  .meetContent .button{
+    width: 80%;
+  }  
 }
 
 
